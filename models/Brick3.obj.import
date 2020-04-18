@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Brick3.obj-7fd87e206ea07dcfe256f9b9a9797641.mesh"
+
+[deps]
+
+files=[ "res://.import/Brick3.obj-7fd87e206ea07dcfe256f9b9a9797641.mesh" ]
+
+source_file="res://models/Brick3.obj"
+dest_files=[ "res://.import/Brick3.obj-7fd87e206ea07dcfe256f9b9a9797641.mesh", "res://.import/Brick3.obj-7fd87e206ea07dcfe256f9b9a9797641.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
