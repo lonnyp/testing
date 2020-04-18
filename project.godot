@@ -23,6 +23,10 @@ _global_script_class_icons={
 config/name="Ludum Dare 46"
 run/main_scene="res://scenes/menus/TitleScreen.tscn"
 
+[display]
+
+window/size/fullscreen=true
+
 [input]
 
 ui_select={
