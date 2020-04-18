@@ -6,3 +6,13 @@
 
 [node name="Label" parent="." index="0"]
 text = "NEW GAME"
+
+[node name="Button" type="Button" parent="Label" index="0"]
+visible = false
+margin_right = 1040.0
+margin_bottom = 70.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
