@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/StoneCeilings.obj-c08d657eb0d51c66deebf08b5d35f2d5.mesh"
+
+[deps]
+
+files=[ "res://.import/StoneCeilings.obj-c08d657eb0d51c66deebf08b5d35f2d5.mesh" ]
+
+source_file="res://models/StoneCeilings.obj"
+dest_files=[ "res://.import/StoneCeilings.obj-c08d657eb0d51c66deebf08b5d35f2d5.mesh", "res://.import/StoneCeilings.obj-c08d657eb0d51c66deebf08b5d35f2d5.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

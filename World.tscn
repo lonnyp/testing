@@ -1,0 +1,49 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://GAMEJAM-MESH LIB.meshlib" type="MeshLibrary" id=1]
+[ext_resource path="res://test/play_ground/Player2.tscn" type="PackedScene" id=2]
+[ext_resource path="res://models/Wall1.obj" type="ArrayMesh" id=3]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 1, 1, 0.152663 )
+
+[node name="World" type="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3.43797 )
+
+[node name="Player2" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.91508, 2.96145, 5.42167 )
+
+[node name="GridMap" type="GridMap" parent="."]
+mesh_library = ExtResource( 1 )
+cell_size = Vector3( 1, 1, 1 )
+data = {
+"cells": PoolIntArray( 65530, 2, 131080, 65532, 2, 131080, 65534, 2, 131080, 65530, 4, 537001992, 65532, 4, 131080, 65534, 4, 131080, 65530, 6, 131080, 65532, 6, 537001992, 65534, 6, 537001992 )
+}
+__meta__ = {
+"_editor_clip_": 0
+}
+
+[node name="walls" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3504, 2.78922, 1.26016 )
+
+[node name="Wall1" type="MeshInstance" parent="walls"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7.3504, -0.789215, 3.17781 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="walls/Wall1"]
+
+[node name="CollisionShape" type="CollisionShape" parent="walls/Wall1/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.07343, -0.0760164 )
+shape = SubResource( 1 )
+
+[node name="Wall2" type="MeshInstance" parent="walls"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.34291, -0.789215, 3.17781 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="walls/Wall2"]
+
+[node name="CollisionShape" type="CollisionShape" parent="walls/Wall2/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.07343, -0.0760164 )
+shape = SubResource( 1 )
